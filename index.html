@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- تحديد ترميز الصفحة ودعم العرض على الهواتف -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوابة التعلم الرقمي</title>
+
+    <!-- تنسيق الصفحة باستخدام CSS -->
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Tahoma, Arial, sans-serif;
+            background: #f3f6fb;
+            color: #243047;
+            line-height: 1.8;
+        }
+        header {
+            background: #173b67;
+            color: white;
+            padding: 22px 8%;
+            text-align: center;
+        }
+        nav {
+            background: #24558b;
+            padding: 12px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 14px;
+            font-weight: bold;
+        }
+        main {
+            width: min(1000px, 90%);
+            margin: 30px auto;
+        }
+        .hero, .card {
+            background: white;
+            border-radius: 14px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 16px rgba(20, 45, 80, 0.08);
+        }
+        .hero { text-align: center; }
+        h2 { color: #1e568c; }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+        .card { margin: 0; }
+        .button {
+            display: inline-block;
+            background: #e49b35;
+            color: #172b45;
+            padding: 9px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            background: #173b67;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            margin-top: 35px;
+        }
+        @media (max-width: 600px) {
+            nav a { display: inline-block; margin: 5px 8px; }
+            main { width: 94%; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- رأس الصفحة: اسم الموقع وتعريف مختصر -->
+    <header id="home">
+        <h1>بوابة التعلم الرقمي</h1>
+        <p>نتعلم اليوم لنصنع مستقبلًا أفضل</p>
+    </header>
+
+    <!-- شريط التنقل بين أقسام الصفحة -->
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#about">عن البوابة</a>
+        <a href="#courses">المساقات</a>
+        <a href="#contact">تواصل معنا</a>
+    </nav>
+
+    <!-- المحتوى الرئيسي للصفحة -->
+    <main>
+        <!-- قسم الترحيب -->
+        <section class="hero">
+            <h2>مرحبًا بك في عالم التعلم</h2>
+            <p>توفر هذه البوابة مساحة بسيطة للتعرف على مهارات التعلم الرقمي
+               واكتساب المعرفة بطريقة منظمة وسهلة.</p>
+            <a class="button" href="#courses">استكشف المساقات</a>
+        </section>
+
+        <!-- قسم التعريف بالموقع -->
+        <section class="card" id="about">
+            <h2>عن البوابة</h2>
+            <p>بوابة التعلم الرقمي صفحة تجريبية صُممت باستخدام HTML
+               لتنظيم المعلومات وعرضها في أقسام واضحة وسهلة الاستخدام.</p>
+        </section>
+
+        <!-- قسم المساقات باستخدام قائمة من البطاقات -->
+        <section id="courses">
+            <h2>المساقات المتاحة</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>أساسيات الحاسوب</h3>
+                    <p>التعرف على مكونات الحاسوب ومبادئ استخدامه.</p>
+                </article>
+                <article class="card">
+                    <h3>تصميم صفحات الويب</h3>
+                    <p>تعلم بناء صفحات الويب باستخدام لغة HTML.</p>
+                </article>
+                <article class="card">
+                    <h3>مهارات الإنترنت</h3>
+                    <p>استخدام الإنترنت والبحث عن المعلومات بفاعلية.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- قسم التواصل -->
+        <section class="card" id="contact">
+            <h2>تواصل معنا</h2>
+            <p>البريد الإلكتروني: info@example.com</p>
+            <p>يسعدنا استقبال استفساراتكم وملاحظاتكم.</p>
+        </section>
+    </main>
+
+    <!-- تذييل الصفحة وحقوق النشر -->
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 - بوابة التعلم الرقمي</p>
+    </footer>
+
+</body>
+</html>
